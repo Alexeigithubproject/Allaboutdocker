@@ -1,8 +1,9 @@
 FROM node:latest
 
-COPY .
-
 WORKDIR /app
+
+COPY . .
 
 RUN npm install 
 
+EXPOSE 80
