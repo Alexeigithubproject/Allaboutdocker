@@ -68,7 +68,7 @@ app.get('/people', async (req, res) => {
 });
 
 mongoose.connect(
-  'mongodb://localhost:27017/swfavorites',
+  'mongodb://172.17.0.3:27017/swfavorites',  //the ip is from th mongodb image we ran
   { useNewUrlParser: true },
   (err) => {
     if (err) {
